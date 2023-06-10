@@ -45,8 +45,6 @@ jobs:
           
       - name: Commit and Push # 実行結果をプッシュしてレポジトリに反映
         run: |
-          git config --local user.email "i3mallow@gmail.com"
-          git config --local user.name "nama-ko"
           git add .
           git commit -m "Update product information"
           git config pull.rebase false
