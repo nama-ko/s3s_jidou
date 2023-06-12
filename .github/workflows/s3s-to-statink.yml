@@ -42,13 +42,3 @@ jobs:
         working-directory: s3s
         run: |
           python3 s3s.py -r
-
-      - name: Commit and Push # 実行結果をプッシュしてレポジトリに反映
-        run: |
-          git config user.email "i3mallow@gmail.com"
-          git config user.name "nama-ko"
-          git add .
-          git commit -m "Update product information"
-          git config pull.rebase false
-          git pull
-          git push origin master
