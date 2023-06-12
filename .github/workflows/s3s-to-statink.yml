@@ -43,7 +43,7 @@ jobs:
         run: |
           python3 s3s.py -r
 
-   - name: Commit and Push # 実行結果をプッシュしてレポジトリに反映
+      - name: Commit and Push # 実行結果をプッシュしてレポジトリに反映
         run: |
           git config --local user.email "i3mallow@gmail.com"
           git config --local user.name "nama-ko"
